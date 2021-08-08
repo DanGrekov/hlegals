@@ -1,0 +1,25 @@
+@import "bootstrap/scss/bootstrap.scss";
+@import "animate.css/animate";
+@import url('../../node_modules/bootstrap-icons/font/bootstrap-icons.css');
+
+@import "./common/index.scss";
+
+
+@import "./components/_header/index.scss";
+@import "./components/_banner/index.scss";
+@import "./components/_discription/index.scss";
+@import "./components/_case/index.scss";
+@import "./components/_confidenc/index.scss";
+@import "./components/_publication/index.scss";
+
+@import "./components/_services/index.scss";
+
+@import "./components/_team/index.scss";
+
+@import "./components/_member/index.scss";
+
+@import "./components/_pablication_menu/index.scss";
+
+@import "./components/_map/index.scss";
+
+@import "./components/_footer/index.scss";

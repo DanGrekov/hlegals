@@ -1,0 +1,52 @@
+header{
+    a, span{
+        color: $gray !important;
+    }
+
+    .header_special{
+        color: $blue_txt !important;
+    }
+}
+
+main{ 
+    .up{
+        padding: 180px 0 100px;
+    }
+
+    .down{
+        padding: 0 0 100px;
+    }
+    .article{
+        
+        h3{
+            @include txt_op(0, $red_txt, 42px, 50px);  
+        }
+    
+        h4{
+            @include txt_op(0, $red_txt, 36px, 50px);  
+        }
+    
+        p{  
+            @include txt_op(0, none, 21px, 30px);
+        }
+    
+        .right{
+            position: relative;
+    
+            &::before{
+                content: " ";
+                position: absolute;
+                left: -20px;
+                height: 100%;
+                width: 4px;
+                background-color: $gray;
+            }
+        }
+    }
+
+    .team_full_sc{
+        width: 100%;
+        padding-bottom: 100px;
+    }
+}
+

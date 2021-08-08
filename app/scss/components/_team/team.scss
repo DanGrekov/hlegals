@@ -1,0 +1,51 @@
+header{
+    a, span{
+        color: $gray !important;
+    }
+
+    .header_special{
+        color: $blue_txt !important;
+    }
+}
+
+.info{
+    padding-top: 200px;
+    h3{ 
+        color: $red_txt;
+        max-width: 865px;
+        margin: 0 auto;
+        padding-bottom: 80px;
+        font-size: 42px;
+        line-height: 50px;
+    }
+}
+
+.team{
+    .wrapper{
+        padding-bottom: 40px;
+
+        img{
+            border-radius: 12px;
+            height: 500px;
+        }
+        
+        .info_col{
+            display: flex;
+            justify-content: space-between;
+
+            img{
+                width: 32px;
+                height: 32px;
+                transform: translateY(50%);
+            }
+
+            h5{ 
+                @include txt_op(10px 0, $blue_grad_first, 18px, 21px);
+            }
+    
+            p{  
+                @include txt_op(0 0 10px, $gray, 16px, 22px);
+            }
+        }
+    }
+}

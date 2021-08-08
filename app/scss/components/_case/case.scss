@@ -1,0 +1,51 @@
+.case{
+    padding-bottom: 50px;
+    
+    .case_container{
+        background-color:#F5F5FA;
+        border-radius: 12px;
+
+        .columns{
+            padding: 0;
+            height: 250px;
+            border: 2px solid #fff;
+            position: relative;
+
+            h4{ 
+                @include txt_op(10px 0 10px 15px, $accent_color, 14px, 17px);
+                text-transform: uppercase;
+                margin-bottom: 50px;
+                border-bottom: 4px solid #fff;
+            }
+
+            .txt{  
+                @include txt_op(0 0 0 15px, #686887, 24px, 28px);
+            }
+
+            .company_name{
+                @include txt_op(0, $gray, 18px, 26px);
+                position: absolute;
+                bottom: 20px;
+                left: 15px;
+            }
+        }
+        
+        .columns_2{
+            padding: 0;
+            height: 250px;
+            border: 2px solid #fff;
+            position: relative;
+
+            .txt{
+                @include txt_op(85px 15px 0 0, #686887, 24px, 28px);
+            }
+
+            .company_name{
+                @include txt_op(0, $gray, 18px, 26px);
+                position: absolute;
+                bottom: 20px;
+                left: 15px;
+            }
+        }
+    }   
+} 

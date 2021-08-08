@@ -1,0 +1,107 @@
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  max-height: $header_height;
+  z-index: 10;
+  padding-top: 50px;
+
+  .header-container {
+    position: relative;
+    align-items: flex-end!important;
+
+    .contacts {
+      display: flex;
+
+      position: absolute;
+      right: 0;
+      top: 0;
+      line-height: 19px;
+      align-items: center;
+
+      .social{
+        img{
+          width: 20px;
+          margin-right: 12px;
+        }
+      }
+
+      .lang-switcher {
+        margin-right: 20px;
+        label {
+
+          span {
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+            letter-spacing: 1px;
+            color: $menu_links_color;
+            width: 29px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            cursor: pointer;
+          }
+
+          input[type=radio] {
+            display: none;
+            color: $white !important;
+
+            &:checked + span {
+              background-color: $accent_color;
+              color: $white;
+            }
+          }
+        }
+      }
+
+      .address {
+        margin-right: 15px;
+
+        a {
+          font-size: 16px;
+          color: $menu_links_color;
+          text-decoration: none;
+        }
+      }
+
+      .phone {
+        margin-right: 10px;
+
+        &:before,
+        &:after {
+          content: '•';
+          color: white;
+          font-size: 20px;
+        }
+
+        a {
+          font-weight: bold;
+          font-size: 16px;
+          text-align: right;
+          color: $menu_links_color;
+          text-decoration: none;
+        }
+      }
+    }
+
+
+    .collapse {
+      justify-content: flex-end;
+
+      .nav-link {
+        @include txt_op(0 0 0 15px, $menu_links_color, 18px, 21px);
+        text-align: end;
+        transition: 0.5s;
+
+        &:hover{
+          color: $red_txt !important;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

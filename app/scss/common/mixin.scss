@@ -1,0 +1,23 @@
+@mixin info_col($height, $padding) {
+    @extend %flex;
+    height: $height;
+    padding: $padding; 
+    
+}
+
+@mixin h3_before($color) {
+    @extend %position;
+    background-color: $color;
+}
+
+@mixin txt_op($padd, $color, $font_s, $line_h) {
+    margin: 0;
+    padding: $padd;
+    color: $color;
+    font-size: $font_s;
+    line-height: $line_h;
+    
+}
+
+
+

@@ -1,0 +1,38 @@
+header{
+    a, span{
+        color: $gray !important;
+    }
+
+    .header_special{
+        color: $blue_txt !important;
+    }
+}
+
+.member{
+    padding: 180px 0 100px;
+
+    img{
+        height: 500px;
+        max-width: 400px;
+        border-radius: 28px;
+    }
+
+    .name{
+
+        h5{ 
+            @include txt_op(0, $red_txt, 42px, 50px);
+        }
+    
+        a{
+            text-decoration: none;
+        }
+    
+        h3{
+            @include txt_op(0, $blue_grad_first, 14px, 17px);
+        }
+    
+        p{  
+            @include txt_op(0, none, 18px, 26px);
+        }
+    }  
+}

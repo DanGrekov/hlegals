@@ -1,0 +1,107 @@
+.forms{
+    padding: 200px 0 80px;
+
+    .form_info{
+        width: 40%;
+
+       p{
+            color: $blue_grad_first;
+            font-size: 21px;
+            line-height: 30px;
+            margin: 0;
+            font-weight: 600;
+       }
+       
+       hr{
+           height: 4px;
+           margin: 40px 0;
+       }
+
+       a{
+            font-size: 21px;
+            color: $blue_txt;
+       }
+       .facebook{
+            align-items: center;
+
+            i{  
+                color: $blue_txt;
+                width: 5%;
+                padding: 0;
+                font-size: 30px;
+            }
+
+            a{  
+                max-width: 150px;
+                padding-left: 15px;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 16px;
+                text-transform: uppercase;
+                color: #24A3FF;  
+            }
+       }
+       
+    }
+
+    .form_input{
+        width: 40%;
+        background-color: #F5F5FA;
+        border-radius: 12px;
+        padding: 20px;
+
+        input, textarea{
+            width: 100%;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        input{
+            height: 50px;
+            &::placeholder {
+                padding: 10px 0 0 10px;
+                font-size: 18px;
+                line-height: 26px;
+                color: $gray;
+            }
+        }
+
+        textarea::placeholder{
+            padding: 10px 0 0 10px;
+            font-size: 18px;
+            line-height: 26px;
+            color: $gray;
+        }
+
+        .button{
+            display: block;
+            background: #24A3FF;
+            box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+            border-radius: 12px;   
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: $white; 
+            border: 0;
+            font-weight: 700;
+            margin: 0 auto;
+            padding: 15px 50px;
+        }
+
+        h4{ 
+            color: $red_txt;
+            font-size: 32px;
+            line-height: 38px;
+        }
+
+        p{
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: $gray;
+        }
+    }
+}
