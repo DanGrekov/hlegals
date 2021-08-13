@@ -6,7 +6,7 @@
 
         .background{
             .bottom_bg{
-                height: 1550px;
+                height: 1450px;
             }
         }
     }   
@@ -15,21 +15,47 @@
 @media (max-width: 992px){
     .banner{
         .background{
+
             .bottom_bg{
-                height: 2300px;
+                height: 2200px;
+            }
+            .right{
+                width: 100%;
+            }
+
+                .vector{
+    
+                    &::before{
+                        content: "системний адміністратор правових рішень";
+                        position: absolute;
+                        display: none;
+                    }
             }
         }
     }   
 }
 
 
-@media (max-width: 768px){
+@media (max-width: 767px){
     .banner{
+
+        .vector{
+
+            &::before{
+                width: 0;
+            }
+        }
+
+        .frame{
+            display: none;
+        }  
+
         h3{
             margin-bottom: 30px;
         }
 
         .right{
+            width: 100%;
             &::before{
                 content: "ПОСЛІДОВНІ";
                 font-weight: 700;
@@ -41,17 +67,51 @@
 
         .background{
             .bottom_bg{
-                height: 2500px;
+                height: 2400px;
             }
         }
     }
 }
 
-@media (max-width: 767px){
+@media (max-width: 576px){
     .banner{
-        .frame{
-            display: none;
+        .background{
+            .bottom_bg{
+                height: 2600px;
+            }
         }
-        
     }
 }
+
+@media (max-width: 425px){
+    .banner{
+        .background{
+            .bottom_bg{
+                height: 2800px;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px){
+    .banner{
+        .background{
+            .bottom_bg{
+                height: 3010px;
+            }
+        }
+    }
+}
+
+@media (max-width: 325px){
+    .banner{
+        .background{
+            .bottom_bg{
+                height: 3200px;
+            }
+        }
+    }
+}
+
+
+

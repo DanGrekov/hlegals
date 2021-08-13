@@ -37,7 +37,7 @@
             position: relative;
 
             .txt{
-                @include txt_op(85px 15px 0 0, #686887, 24px, 28px);
+                @include txt_op(85px 0 0 15px, #686887, 24px, 28px);
             }
 
             .company_name{

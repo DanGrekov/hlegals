@@ -3,17 +3,20 @@ footer{
     width: 100%;
     height: 150px;
 
-    .container{
+    .foot_container{
         border-top: 3px solid #c5c5c559;;
 
-        .row{
+        .foot_row{
             justify-content: space-between;
             align-items: center;
+            
 
-            .col-5{
+            .left{
                 .adress{
                     justify-content: flex-start;
+                    align-items: center;
                     padding: 20px 0 15px;
+                    
                     p,a{ 
                         font-style: 16px;
                         color: $blue_grad_first;
@@ -39,6 +42,8 @@ footer{
         
                 .number{
                     justify-content: flex-start;
+                    align-items: center;
+
                     p,a{ 
                         font-style: 16px;
                         color: $blue_grad_first;
@@ -71,7 +76,7 @@ footer{
                 }
             }
             
-            .col-6{
+            .right{
                 text-align: end;
                 color: $gray;
             }

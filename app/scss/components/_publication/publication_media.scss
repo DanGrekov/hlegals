@@ -1,0 +1,34 @@
+@media (max-width: 992px){
+    .publication{
+
+        .publ_container{
+
+            .publ_row {
+                padding: 0;
+        
+                .left{
+                    padding-bottom: 180px;
+        
+                    .item{
+        
+                        h4{
+                            padding:10px;
+                        }
+
+                        .date{
+                            padding-bottom: 10px;
+                        }
+
+                        hr, p:not(.date){
+                            display: none;
+                        }
+                    }
+                }
+        
+                .mid, .right{
+                    display: none;
+                }
+            }  
+        }  
+    }   
+}

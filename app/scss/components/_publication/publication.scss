@@ -31,7 +31,7 @@
         }  
     }
 
-    .container{
+    .publ_container{
 
         p{  
             margin: 0;
@@ -51,7 +51,7 @@
             color: $red_txt;
         }
 
-        .row>* {
+        .publ_row {
             padding-left:0;
 
             &:nth-child(3){
@@ -88,7 +88,7 @@
                     font-size: 12px;
                     line-height: 14px;
                     letter-spacing: 1px;
-                    color: #F5F5FA;
+                    color: $gray;
                 }
 
                 p{  

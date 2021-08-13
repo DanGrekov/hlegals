@@ -1,18 +1,124 @@
 @media (max-width: 1400px){
     .discription{
-        padding: 250px 0 1000px;
+        padding: 250px 0 600px;
     }
 }
 
 @media (max-width: 997px){
     .discription{
-        padding: 1000px 0;
+        padding: 900px 0 600px;
+
+        .carousel-height{
+            height: 500px;
+        }
+
+        .row{
+            .txt{
+                width: 100%;
+
+                img{
+                    display: block;
+                }
+
+                .work{
+                    padding-left: 200px;
+                }
+            }
+
+            .wrapper{
+                display: none; 
+             }
+        }  
     }
 }
 
 @media (max-width: 767px){
     .discription{
-        padding: 1200px 0 1000px;
+        padding: 1100px 0 800px;
+
+        .carousel-height{
+            height: 600px;
+        }
+
+        .row{
+            .txt{
+                img{
+                    bottom: 68px;
+                    width: 100px;
+                    height: 100px;
+                }
+
+                .work{
+                    padding-left: 120px;
+                }
+            }
+        }  
+    }
+}
+
+@media (max-width: 576px){
+    .discription{
+        padding: 1300px 0 700px;
+
+        .carousel-height{
+            height: 600px;
+        }
+
+        .row{
+            .txt{
+                img{
+                    bottom: 20px;
+                }
+            }
+        }  
+    }
+}
+
+@media (max-width: 425px){
+    .discription{
+        padding: 1500px 0 900px;
+
+        .carousel-height{
+            height: 750px;
+        }
+
+        .row{
+            .txt{
+                img{
+                    bottom: 65px;
+                }
+            }
+        }  
+    }
+}
+
+@media (max-width: 375px){
+    .discription{
+        padding: 1700px 0 1000px;
+
+        .carousel-height{
+            height: 900px;
+        }
+
+        .row{
+            .txt{
+                img{
+                    bottom: 65px;
+                }
+
+                .work{
+                    padding-top: 65px;
+                    padding-left: 120px;
+                    font-size: 10px;
+                }
+            }
+        }  
+    }
+}
+
+@media (max-width: 325px){
+    .discription{
+        padding: 1900px 0 600px;
     }
 }
 

@@ -1,7 +1,11 @@
 .discription{
     padding: 50px 0 600px;
     height: 500px;
-    
+
+    .carousel-bg{
+        border-radius: 15px;
+    }
+
     .carousel-indicators{
         bottom: -60px;
 
@@ -20,10 +24,11 @@
         border-radius: 5px;
 
         img{
-            max-width: 413px;
+            width: 100%;
             height: 500px;
         }
-        .txt.col-8{
+
+        .txt{
             margin-top: 50px;
             padding: 0 40px;
 
@@ -38,17 +43,28 @@
             }
 
             h3{ 
+                position: relative;
                 @include txt_op(0, $red_txt, 42px, 50px);
                 max-width: 827px;
-                height: 200px;
             }
-
-            .name{
-                @include txt_op(20px 0 0, $gray, 18px, 0);
+            .work{
+                padding-top: 20px;
+                .name{
+                    @include txt_op(0, $gray, 18px, 25px);
+                }
+    
+                .position{
+                    @include txt_op(0, $gray, 16px, 50px);
+                }
             }
-
-            .position{
-                @include txt_op(0, $gray, 16px, 0);
+            
+            img{
+                display: none;
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                bottom: 20px;
+                border-radius: 50%;
             }
         }
     }

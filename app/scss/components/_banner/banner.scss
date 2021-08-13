@@ -12,7 +12,8 @@
             --bs-gutter-x: 0;
 
             .left, .line, 
-            .right, .item{
+            .right, .item,
+            .item-12{
                 z-index: 3;
             }
 
@@ -49,6 +50,7 @@
             .right{
                 color: $white;
                 max-width: 600px;
+                display: block;
 
                 h4{
                     margin-top: 25px;
@@ -58,28 +60,28 @@
 
                 p{  
                     margin: 40px 0 0;
-                    height: 120px;
                     font-size: 21px;
                     line-height: 30px;
                 }  
             }
 
-            span{
-                color: $white;
-            }
-
             .item-12{
-                padding: 100px 0 0;
+                display: block;
 
+                span{
+                    color: $white;
+                }
+    
                 h3{
-                    @include txt_op(0 0 68px, $red_txt, 42px, 50px);
+                    @include txt_op(0, $red_txt, 42px, 50px);
                 }
             }
 
             .item{
-
+                padding: 80px 15px 0 0;
                 h4{
-                    @include txt_op(20px 0, $blue_txt, 24px, 0);
+                    @include txt_op(20px 0, $blue_txt, 24px, 24px);
+
                 }
 
                 p{  
@@ -103,7 +105,7 @@
                content: "системний адміністратор правових рішень";
                position: absolute;
                z-index: 3;
-               width: 550px;
+               width: 150%;
                top: 100px;
                color: $white;
                font-size: 45px;
