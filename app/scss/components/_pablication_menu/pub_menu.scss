@@ -2,6 +2,26 @@
     padding: 50px 0 150px;
     margin-top: 180px;
 
+    .news_boadr{
+        
+
+        .grid_col{
+            .item{
+                background-color: $white;
+                border-radius: 10px;
+                transition: 0.5s;
+
+                &:hover{
+                    box-shadow: 0 0 7px rgb(43, 43, 43);
+                }
+
+                .item_news_txt{
+                    padding: 12px;
+                } 
+            }  
+        }
+    }
+
     .gradient{
         bottom: 0;
         position: absolute;
@@ -68,7 +88,5 @@
         &:hover{
             background-color: $white;
         }
-    } 
-    
-    
+    }    
 }

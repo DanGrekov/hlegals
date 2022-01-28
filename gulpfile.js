@@ -7,6 +7,7 @@ let autoprefixer = require('gulp-autoprefixer');
 let rename = require('gulp-rename');
 let sourcemaps = require('gulp-sourcemaps');
 
+
 function buildStyles() {
     return gulp.src(`./${APP}/scss/index.scss`)
         .pipe(sourcemaps.init())
